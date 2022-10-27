@@ -47,7 +47,10 @@ const Body = () => {
 
   return (
     <div className="p-10 bg-white border-x-2 border-b-2 drop-shadow-sm">
-      <form className="grid grid-cols-2 gap-5 mb-11" onSubmit={SubmitHandler}>
+      <form
+        className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-11"
+        onSubmit={SubmitHandler}
+      >
         <input
           name="topText"
           type="text"
@@ -66,7 +69,7 @@ const Body = () => {
         />
         <button
           onClick={HandleClickToGetMeme}
-          className="col-span-2 border-2 h-12 bg-purple-900 rounded-lg mt-1 text-gray-100 font-bold text-base"
+          className=" border-2 md:col-span-2 h-12 bg-purple-900 rounded-lg mt-1 text-gray-100 font-bold text-base"
         >
           Get New Meme Image
         </button>
